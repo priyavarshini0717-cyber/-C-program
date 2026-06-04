@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    int n = 50, a = 0, b = 1, c, sum = 0;
+    while(a <= n)
+    {
+        if(a % 2 == 0)
+            sum = sum + a;
+        c = a + b;
+        a = b;
+        b = c;
+    }
+    printf("%d", sum);
+    return 0;
+}
+-------------------------------------------------------------
+output: 44
